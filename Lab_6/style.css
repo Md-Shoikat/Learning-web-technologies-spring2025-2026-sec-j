@@ -25,6 +25,9 @@ body{
     cursor: pointer;
 }
 
+.winner{
+    background-color: yellow;
+}
 
 #reset{
     margin-top: 20px;
