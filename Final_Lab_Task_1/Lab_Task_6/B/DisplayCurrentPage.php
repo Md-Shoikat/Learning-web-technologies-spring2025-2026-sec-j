@@ -1,12 +1,10 @@
+
 <?php
-if($_SERVER["REQUEST_METHOD"]=="POST")
-    {
-        $blood = $_POST["blood"];
-        echo "Your Blood Group is: " . $blood;
-    }
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $blood = $_POST["blood"];
+    echo "Your Blood Group is: " . $blood;
+}
 ?>
-
-
 
 <!DOCTYPE html>
 <html>
