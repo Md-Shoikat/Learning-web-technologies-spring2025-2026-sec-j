@@ -1,17 +1,22 @@
 <?php
-    session_start();
-    if(!isset($_COOKIE['status'])){
-        header('location: login.php');
-    }
+session_start();
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title>Home Page</title>
+    <title>Home</title>
 </head>
 <body>
-    <h1>Welcome Home! <?php echo $_SESSION['username']; ?></h1>
-    <a href='logout.php'>Logout</a>
+
+
+<h2>Welcome to X Company</h2>
+
+<a href="home.php">Home</a><br>
+<a href="login.php">Login</a> <br>
+<a href="registration.php">Registration</a><br>
+
+
+
 </body>
 </html>
