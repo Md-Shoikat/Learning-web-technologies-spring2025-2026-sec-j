@@ -1,3 +1,27 @@
+<?php
+session_start();
+
+if(isset($_POST['submit'])){
+
+    if($_POST['password'] != $_POST['confirm']){
+        echo "Password not matched!";
+    }
+    else{
+        $_SESSION['user'] = [
+            "name" => $_POST['name'],
+            "email" => $_POST['email'],
+            "username" => $_POST['username'],
+            "password" => $_POST['password'],
+            "gender" => $_POST['gender'],
+            "dob" => $_POST['dob']
+        ];
+
+        echo "Registration successful!";
+    }
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,3 +49,4 @@
     
 </body>
 </html>
+
