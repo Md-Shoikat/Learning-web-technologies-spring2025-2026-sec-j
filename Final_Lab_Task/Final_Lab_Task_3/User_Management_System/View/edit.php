@@ -19,10 +19,10 @@
 <body>
         <h1>Edit User</h1>
         <a href='user_list.php'>back</a> |
-        <a href='../controller/logout.php'>Logout</a>
+        <a href='../Controller/logout.php'>Logout</a>
         <br>
 
-        <form method="post" action="../controller/updateCheck.php" enctype="multipart/form-data">
+        <form method="post" action="../Controller/updateCheck.php" enctype="multipart/form-data">
             ID:         <input type="text" name="username" value="<?=$user['id']?>"/> <br>
             username:   <input type="text" name="password" value="<?=$user['username']?>"/> <br>
             Email:      <input type="email" name="email" value="<?=$user['email']?>"/> <br>

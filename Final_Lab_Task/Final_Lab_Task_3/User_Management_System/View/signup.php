@@ -5,7 +5,7 @@
     <title>Signup</title>
 </head>
 <body> 
-        <form method="post" action="../controller/signupCheck.php" enctype="multipart/form-data">
+        <form method="post" action="../controller/signCheck.php" enctype="multipart/form-data">
             Username:   <input type="text" name="username" value=""/> <br>
             Password:   <input type="password" name="password" value=""/> <br>
             Email:      <input type="email" name="email" value=""/> <br>
